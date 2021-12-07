@@ -1,5 +1,70 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,300;0,400;0,500;0,600;1,300;1,400;1,500&display=swap');
+
+$font: "Montserrat", sans-serif;
+$mainColor: #00764b;
+$iconSize: 30px;
+
 body{
-  background-color: $backgroundColor;
-  color: white;
+  background-color: white;
+  color: black;
   font-family: $font;
+  margin: 0;
+}
+
+//Icomoon fonts 
+
+@font-face {
+  font-family: 'icomoon';
+  src:  url('fonts/icomoon.eot?6p41ra');
+  src:  url('fonts/icomoon.eot?6p41ra#iefix') format('embedded-opentype'),
+    url('fonts/icomoon.ttf?6p41ra') format('truetype'),
+    url('fonts/icomoon.woff?6p41ra') format('woff'),
+    url('fonts/icomoon.svg?6p41ra#icomoon') format('svg');
+  font-weight: normal;
+  font-style: normal;
+  font-display: block;
+}
+
+[class^="icon-"], [class*=" icon-"] {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: 'icomoon' !important;
+  speak: never;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-css3:before {
+  content: "\e905";
+  //color: #1572b6;
+}
+.icon-react:before {
+  content: "\e901";
+  //color: #61dafb;
+}
+.icon-mongodb:before {
+  content: "\e902";
+  //color: #47a248;
+}
+.icon-sass:before {
+  content: "\e903";
+  //color: #c69;
+}
+.icon-node:before {
+  content: "\e904";
+  //color: #393;
+}
+.icon-javascript:before {
+  content: "\e900";
+  //color: #f7df1e;
+}
+.icon-html:before {
+  content: "\eae4";
 }

@@ -1,0 +1,49 @@
+.skills{
+  display: flex;
+  flex-direction: column;
+  &__stack{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    .tech{
+      display: flex;      
+      flex-direction: column;
+      width: 50px;
+      height: auto;
+      margin: 15px;
+      h3{
+        font-size: 1em;
+      }
+      .icon-css3{
+        font-size: $iconSize;
+        color: $mainColor;
+      }
+      .icon-html{
+        font-size: $iconSize;
+        color: $mainColor;
+      }
+      .icon-javascript{
+        font-size: $iconSize;
+        color: $mainColor;
+      }
+      .icon-react{
+        font-size: $iconSize;
+        color: $mainColor;
+      }
+      .icon-mongodb{
+        font-size: $iconSize;
+        color: $mainColor;
+      }
+      .icon-sass{
+        font-size: $iconSize;
+        color: $mainColor;
+      }
+      .icon-node{
+        font-size: $iconSize;
+        color: $mainColor;
+      }
+
+    }
+  }
+}
