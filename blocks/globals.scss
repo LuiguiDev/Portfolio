@@ -1,14 +1,30 @@
-
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,300;0,400;0,500;0,600;1,300;1,400;1,500&display=swap');
 
+//Variables
 $font: "Montserrat", sans-serif;
 $mainColor: #00764b;
 $iconSize: 30px;
+$spacing: 50px;
+$midSpacing: 25px;
+$textSpacing: 10px;
 
+//Global styles
 body{
   background-color: white;
   color: black;
   font-family: $font;
+  margin: 0;
+}
+h1{
+  margin: 0;
+}
+h2{
+  margin: 0;
+}
+h3{
+  margin: 0;
+}
+p{
   margin: 0;
 }
 
@@ -41,30 +57,30 @@ body{
   -moz-osx-font-smoothing: grayscale;
 }
 
-.icon-css3:before {
+.icon-CSS:before {
   content: "\e905";
   //color: #1572b6;
 }
-.icon-react:before {
+.icon-React:before {
   content: "\e901";
   //color: #61dafb;
 }
-.icon-mongodb:before {
+.icon-MongoDB:before {
   content: "\e902";
   //color: #47a248;
 }
-.icon-sass:before {
+.icon-Sass:before {
   content: "\e903";
   //color: #c69;
 }
-.icon-node:before {
+.icon-Node:before {
   content: "\e904";
   //color: #393;
 }
-.icon-javascript:before {
+.icon-Javascript:before {
   content: "\e900";
   //color: #f7df1e;
 }
-.icon-html:before {
+.icon-HTML:before {
   content: "\eae4";
 }

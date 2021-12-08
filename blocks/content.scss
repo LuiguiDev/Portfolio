@@ -1,6 +1,11 @@
 .skills{
   display: flex;
   flex-direction: column;
+  align-items: center;
+  margin-bottom: $spacing;
+  h2{
+    margin-bottom: $midSpacing;
+  }
   &__stack{
     display: flex;
     flex-wrap: wrap;
@@ -9,41 +14,74 @@
     .tech{
       display: flex;      
       flex-direction: column;
+      align-items: center;
       width: 50px;
       height: auto;
       margin: 15px;
       h3{
-        font-size: 1em;
+        font-size: 1em;  
+        margin-top: $textSpacing;      
       }
-      .icon-css3{
+      .icon-CSS{
         font-size: $iconSize;
         color: $mainColor;
       }
-      .icon-html{
+      .icon-HTML{
         font-size: $iconSize;
         color: $mainColor;
       }
-      .icon-javascript{
+      .icon-Javascript{
         font-size: $iconSize;
         color: $mainColor;
       }
-      .icon-react{
+      .icon-React{
         font-size: $iconSize;
         color: $mainColor;
       }
-      .icon-mongodb{
+      .icon-MongoDB{
         font-size: $iconSize;
         color: $mainColor;
       }
-      .icon-sass{
+      .icon-Sass{
         font-size: $iconSize;
         color: $mainColor;
       }
-      .icon-node{
+      .icon-Node{
         font-size: $iconSize;
         color: $mainColor;
       }
 
+    }
+  }
+}
+.projects{
+  h2{
+    margin-bottom: $midSpacing;
+  }
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  .carousel{
+    display: flex;  
+    overflow: scroll;  
+    width: 100%;    
+    article{
+      flex-shrink: 0;
+      width: 350px;
+      height: auto;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      h3{
+        margin: $textSpacing;
+      }
+      img{
+        width: 40%;      
+      }
+      p{
+        width: 60%;
+      }
     }
   }
 }

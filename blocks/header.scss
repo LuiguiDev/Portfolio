@@ -1,9 +1,25 @@
 header{
   height: 75px;
   display: flex;  
+  align-items: center;
   background-color: $mainColor;
   color: white;
+  h2{
+    font-size: 1.2em;
+    font-weight: 400;
+  }
   ul{
     display: none;
   }    
+}
+.cover{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 300px;
+  h1{
+    display: flex;
+    width: 60%;
+    text-align: center;
+  }
 }

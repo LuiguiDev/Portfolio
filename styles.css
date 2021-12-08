@@ -7,6 +7,22 @@ body {
   margin: 0;
 }
 
+h1 {
+  margin: 0;
+}
+
+h2 {
+  margin: 0;
+}
+
+h3 {
+  margin: 0;
+}
+
+p {
+  margin: 0;
+}
+
 @font-face {
   font-family: "icomoon";
   src: url("fonts/icomoon.eot?6p41ra");
@@ -29,31 +45,31 @@ body {
   -moz-osx-font-smoothing: grayscale;
 }
 
-.icon-css3:before {
+.icon-CSS:before {
   content: "";
 }
 
-.icon-react:before {
+.icon-React:before {
   content: "";
 }
 
-.icon-mongodb:before {
+.icon-MongoDB:before {
   content: "";
 }
 
-.icon-sass:before {
+.icon-Sass:before {
   content: "";
 }
 
-.icon-node:before {
+.icon-Node:before {
   content: "";
 }
 
-.icon-javascript:before {
+.icon-Javascript:before {
   content: "";
 }
 
-.icon-html:before {
+.icon-HTML:before {
   content: "";
 }
 
@@ -62,11 +78,38 @@ header {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   background-color: #00764b;
   color: white;
 }
+header h2 {
+  font-size: 1.2em;
+  font-weight: 400;
+}
 header ul {
   display: none;
+}
+
+.cover {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 300px;
+}
+.cover h1 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 60%;
+  text-align: center;
 }
 
 .skills {
@@ -77,6 +120,13 @@ header ul {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-bottom: 50px;
+}
+.skills h2 {
+  margin-bottom: 25px;
 }
 .skills__stack {
   display: -webkit-box;
@@ -99,40 +149,93 @@ header ul {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   width: 50px;
   height: auto;
   margin: 15px;
 }
 .skills__stack .tech h3 {
   font-size: 1em;
+  margin-top: 10px;
 }
-.skills__stack .tech .icon-css3 {
+.skills__stack .tech .icon-CSS {
   font-size: 30px;
   color: #00764b;
 }
-.skills__stack .tech .icon-html {
+.skills__stack .tech .icon-HTML {
   font-size: 30px;
   color: #00764b;
 }
-.skills__stack .tech .icon-javascript {
+.skills__stack .tech .icon-Javascript {
   font-size: 30px;
   color: #00764b;
 }
-.skills__stack .tech .icon-react {
+.skills__stack .tech .icon-React {
   font-size: 30px;
   color: #00764b;
 }
-.skills__stack .tech .icon-mongodb {
+.skills__stack .tech .icon-MongoDB {
   font-size: 30px;
   color: #00764b;
 }
-.skills__stack .tech .icon-sass {
+.skills__stack .tech .icon-Sass {
   font-size: 30px;
   color: #00764b;
 }
-.skills__stack .tech .icon-node {
+.skills__stack .tech .icon-Node {
   font-size: 30px;
   color: #00764b;
+}
+
+.projects {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.projects h2 {
+  margin-bottom: 25px;
+}
+.projects .carousel {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  overflow: scroll;
+  width: 100%;
+}
+.projects .carousel article {
+  -ms-flex-negative: 0;
+      flex-shrink: 0;
+  width: 350px;
+  height: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.projects .carousel article h3 {
+  margin: 10px;
+}
+.projects .carousel article img {
+  width: 40%;
+}
+.projects .carousel article p {
+  width: 60%;
 }
 
 footer {
