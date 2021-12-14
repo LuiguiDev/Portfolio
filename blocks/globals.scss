@@ -28,31 +28,27 @@ p{
   margin: 0;
 }
 
+
 //Icomoon fonts 
 
 @font-face {
   font-family: 'icomoon';
-  src:  url('fonts/icomoon.eot?6p41ra');
-  src:  url('fonts/icomoon.eot?6p41ra#iefix') format('embedded-opentype'),
-    url('fonts/icomoon.ttf?6p41ra') format('truetype'),
-    url('fonts/icomoon.woff?6p41ra') format('woff'),
-    url('fonts/icomoon.svg?6p41ra#icomoon') format('svg');
+  src:  url('fonts/techs/icomoon.eot?6p41ra');
+  src:  url('fonts/techs/icomoon.eot?6p41ra#iefix') format('embedded-opentype'),
+    url('fonts/techs/icomoon.ttf?6p41ra') format('truetype'),
+    url('fonts/techs/icomoon.woff?6p41ra') format('woff'),
+    url('fonts/techs/icomoon.svg?6p41ra#icomoon') format('svg');
   font-weight: normal;
   font-style: normal;
   font-display: block;
 }
-
 [class^="icon-"], [class*=" icon-"] {
-  /* use !important to prevent issues with browser extensions that change fonts */
   font-family: 'icomoon' !important;
-  speak: never;
   font-style: normal;
   font-weight: normal;
   font-variant: normal;
   text-transform: none;
   line-height: 1;
-
-  /* Better Font Rendering =========== */
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
@@ -84,3 +80,30 @@ p{
 .icon-HTML:before {
   content: "\eae4";
 }
+/*
+//media icons
+@font-face {
+  font-family: 'icomoon';
+  src:  url('fonts/media/icomoon.eot?b5qd9h');
+  src:  url('fonts/media/icomoon.eot?b5qd9h#iefix') format('embedded-opentype'),
+    url('fonts/media/icomoon.ttf?b5qd9h') format('truetype'),
+    url('fonts/media/icomoon.woff?b5qd9h') format('woff'),
+    url('fonts/media/icomoon.svg?b5qd9h#icomoon') format('svg');
+  font-weight: normal;
+  font-style: normal;
+  font-display: block;
+}
+
+.icon-github1:before {
+  content: "\e902";
+}
+.icon-instagram:before {
+  content: "\e900";
+}
+.icon-github:before {
+  content: "\eab0";
+}
+.icon-linkedin:before {
+  content: "\eaca";
+}
+*/

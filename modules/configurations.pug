@@ -1,10 +1,12 @@
-mixin tech(name)
+mixin tech(name,)
   .tech
     i(class="icon-" + name)
     h3= name    
 
-mixin case(title, description)
+mixin case(title, description, link)
   article(class= "case")
     img(src="images/" + title + ".png", alt= title +"project" class="case__image")
     h3= title 
     p= description
+    button 
+      a(href= link, target="_blank")="View project"
