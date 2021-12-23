@@ -292,6 +292,9 @@ footer form input, footer form button {
   background-color: white;
   margin-bottom: 10px;
 }
+footer form .message {
+  padding-bottom: 100px;
+}
 footer form button {
   width: 50%;
 }
