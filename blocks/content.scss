@@ -22,35 +22,10 @@
         font-size: 1em;  
         margin-top: $textSpacing;      
       }
-      .icon-CSS{
+      [class^="icon-"]{
         font-size: $iconSize;
-        color: $mainColor;
-      }
-      .icon-HTML{
-        font-size: $iconSize;
-        color: $mainColor;
-      }
-      .icon-Javascript{
-        font-size: $iconSize;
-        color: $mainColor;
-      }
-      .icon-React{
-        font-size: $iconSize;
-        color: $mainColor;
-      }
-      .icon-MongoDB{
-        font-size: $iconSize;
-        color: $mainColor;
-      }
-      .icon-Sass{
-        font-size: $iconSize;
-        color: $mainColor;
-      }
-      .icon-Node{
-        font-size: $iconSize;
-        color: $mainColor;
-      }
-
+        color: #00764b;
+      }      
     }
   }
 }
@@ -90,7 +65,7 @@
         width: 95px;
         border: none;
         color: black;
-        background-color: $mainColor;
+        background: $mainColor;
         border-radius: 5px;
         a{
           text-decoration: none;

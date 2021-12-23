@@ -25,21 +25,31 @@ p {
 
 @font-face {
   font-family: "icomoon";
-  src: url("fonts/techs/icomoon.eot?6p41ra");
-  src: url("fonts/techs/icomoon.eot?6p41ra#iefix") format("embedded-opentype"), url("fonts/techs/icomoon.ttf?6p41ra") format("truetype"), url("fonts/techs/icomoon.woff?6p41ra") format("woff"), url("fonts/techs/icomoon.svg?6p41ra#icomoon") format("svg");
+  src: url("fonts/icomoon.eot?5xlwys");
+  src: url("fonts/icomoon.eot?5xlwys#iefix") format("embedded-opentype"), url("fonts/icomoon.ttf?5xlwys") format("truetype"), url("fonts/icomoon.woff?5xlwys") format("woff"), url("fonts/icomoon.svg?5xlwys#icomoon") format("svg");
   font-weight: normal;
   font-style: normal;
   font-display: block;
 }
 [class^=icon-], [class*=" icon-"] {
+  /* use !important to prevent issues with browser extensions that change fonts */
   font-family: "icomoon" !important;
   font-style: normal;
   font-weight: normal;
   font-variant: normal;
   text-transform: none;
   line-height: 1;
+  /* Better Font Rendering =========== */
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-github:before {
+  content: "";
+}
+
+.icon-instagram:before {
+  content: "";
 }
 
 .icon-CSS:before {
@@ -51,52 +61,29 @@ p {
 }
 
 .icon-MongoDB:before {
-  content: "";
-}
-
-.icon-Sass:before {
   content: "";
 }
 
-.icon-Node:before {
+.icon-Sass:before {
   content: "";
 }
 
+.icon-Node:before {
+  content: "";
+}
+
 .icon-Javascript:before {
-  content: "";
+  content: "";
+}
+
+.icon-linkedin:before {
+  content: "";
 }
 
 .icon-HTML:before {
   content: "";
 }
 
-/*
-//media icons
-@font-face {
-  font-family: 'icomoon';
-  src:  url('fonts/media/icomoon.eot?b5qd9h');
-  src:  url('fonts/media/icomoon.eot?b5qd9h#iefix') format('embedded-opentype'),
-    url('fonts/media/icomoon.ttf?b5qd9h') format('truetype'),
-    url('fonts/media/icomoon.woff?b5qd9h') format('woff'),
-    url('fonts/media/icomoon.svg?b5qd9h#icomoon') format('svg');
-  font-weight: normal;
-  font-style: normal;
-  font-display: block;
-}
-
-.icon-github1:before {
-  content: "\e902";
-}
-.icon-instagram:before {
-  content: "\e900";
-}
-.icon-github:before {
-  content: "\eab0";
-}
-.icon-linkedin:before {
-  content: "\eaca";
-}
-*/
 header {
   height: 75px;
   display: -webkit-box;
@@ -105,7 +92,8 @@ header {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  background-color: #00764b;
+  background: -webkit-gradient(linear, left top, right top, from(#00764b), to(#009760));
+  background: linear-gradient(to right, #00764b, #009760);
   color: white;
 }
 header h2 {
@@ -184,31 +172,7 @@ header ul {
   font-size: 1em;
   margin-top: 10px;
 }
-.skills__stack .tech .icon-CSS {
-  font-size: 30px;
-  color: #00764b;
-}
-.skills__stack .tech .icon-HTML {
-  font-size: 30px;
-  color: #00764b;
-}
-.skills__stack .tech .icon-Javascript {
-  font-size: 30px;
-  color: #00764b;
-}
-.skills__stack .tech .icon-React {
-  font-size: 30px;
-  color: #00764b;
-}
-.skills__stack .tech .icon-MongoDB {
-  font-size: 30px;
-  color: #00764b;
-}
-.skills__stack .tech .icon-Sass {
-  font-size: 30px;
-  color: #00764b;
-}
-.skills__stack .tech .icon-Node {
+.skills__stack .tech [class^=icon-] {
   font-size: 30px;
   color: #00764b;
 }
@@ -270,7 +234,8 @@ header ul {
   width: 95px;
   border: none;
   color: black;
-  background-color: #00764b;
+  background: -webkit-gradient(linear, left top, right top, from(#00764b), to(#009760));
+  background: linear-gradient(to right, #00764b, #009760);
   border-radius: 5px;
 }
 .projects .carousel article button a {
@@ -279,5 +244,54 @@ header ul {
 }
 
 footer {
-  bottom: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  background: -webkit-gradient(linear, left top, right top, from(#00764b), to(#009760));
+  background: linear-gradient(to right, #00764b, #009760);
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 50px 0 50px;
+  margin-top: 100px;
+}
+footer .media {
+  color: white;
+  font-size: 25px;
+  width: 200px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-bottom: 50px;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+}
+footer form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 200px;
+}
+footer form input, footer form button {
+  width: 100%;
+  height: 25px;
+  border-radius: 5px;
+  border: none;
+  background-color: white;
+  margin-bottom: 10px;
+}
+footer form button {
+  width: 50%;
 }
